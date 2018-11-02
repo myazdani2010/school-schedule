@@ -8,13 +8,13 @@
 
 import UIKit
 
-class ThirtPartyLoginController: UIViewController {
+class HomeController: UIViewController {
 
     @IBOutlet weak var googleButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("ThirtPartyLoginController called")
+        print("HomeController called")
     }
 
 }

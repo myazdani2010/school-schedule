@@ -10,7 +10,7 @@
 		0041EBCB91C2A02078A847D9 /* Pods_school_schedule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 259D5D59D38BA1F32B3326F9 /* Pods_school_schedule.framework */; };
 		CE099731218A76EB00DCE618 /* SignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE099730218A76EB00DCE618 /* SignInController.swift */; };
 		CEEFAB6F218276AF005E52CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEFAB6E218276AF005E52CE /* AppDelegate.swift */; };
-		CEEFAB71218276AF005E52CE /* ThirtPartyLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEFAB70218276AF005E52CE /* ThirtPartyLoginController.swift */; };
+		CEEFAB71218276AF005E52CE /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEFAB70218276AF005E52CE /* HomeController.swift */; };
 		CEEFAB74218276AF005E52CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEFAB72218276AF005E52CE /* Main.storyboard */; };
 		CEEFAB77218276AF005E52CE /* school_schedule.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEEFAB75218276AF005E52CE /* school_schedule.xcdatamodeld */; };
 		CEEFAB79218276B0005E52CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEFAB78218276B0005E52CE /* Assets.xcassets */; };
@@ -22,7 +22,7 @@
 		CE099730218A76EB00DCE618 /* SignInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInController.swift; sourceTree = "<group>"; };
 		CEEFAB6B218276AE005E52CE /* school-schedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "school-schedule.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEFAB6E218276AF005E52CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CEEFAB70218276AF005E52CE /* ThirtPartyLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirtPartyLoginController.swift; sourceTree = "<group>"; };
+		CEEFAB70218276AF005E52CE /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		CEEFAB73218276AF005E52CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEEFAB76218276AF005E52CE /* school_schedule.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = school_schedule.xcdatamodel; sourceTree = "<group>"; };
 		CEEFAB78218276B0005E52CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,7 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				CEEFAB6E218276AF005E52CE /* AppDelegate.swift */,
-				CEEFAB70218276AF005E52CE /* ThirtPartyLoginController.swift */,
+				CEEFAB70218276AF005E52CE /* HomeController.swift */,
 				CE099730218A76EB00DCE618 /* SignInController.swift */,
 				CEEFAB72218276AF005E52CE /* Main.storyboard */,
 				CEEFAB78218276B0005E52CE /* Assets.xcassets */,
@@ -222,7 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEEFAB71218276AF005E52CE /* ThirtPartyLoginController.swift in Sources */,
+				CEEFAB71218276AF005E52CE /* HomeController.swift in Sources */,
 				CE099731218A76EB00DCE618 /* SignInController.swift in Sources */,
 				CEEFAB6F218276AF005E52CE /* AppDelegate.swift in Sources */,
 				CEEFAB77218276AF005E52CE /* school_schedule.xcdatamodeld in Sources */,
