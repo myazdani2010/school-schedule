@@ -15,6 +15,7 @@
 		CEEFAB77218276AF005E52CE /* school_schedule.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEEFAB75218276AF005E52CE /* school_schedule.xcdatamodeld */; };
 		CEEFAB79218276B0005E52CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEFAB78218276B0005E52CE /* Assets.xcassets */; };
 		CEEFAB7C218276B0005E52CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEFAB7A218276B0005E52CE /* LaunchScreen.storyboard */; };
+		CEF90413218D110600A5BB20 /* SwipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF90412218D110600A5BB20 /* SwipeTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		CEEFAB78218276B0005E52CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEEFAB7B218276B0005E52CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEEFAB7D218276B0005E52CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEF90412218D110600A5BB20 /* SwipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTableViewController.swift; sourceTree = "<group>"; };
 		EE3C5CAE6421D3EA6D0678A2 /* Pods-school-schedule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-school-schedule.release.xcconfig"; path = "Pods/Target Support Files/Pods-school-schedule/Pods-school-schedule.release.xcconfig"; sourceTree = "<group>"; };
 		F840925A935BE8593D26C3D1 /* Pods-school-schedule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-school-schedule.debug.xcconfig"; path = "Pods/Target Support Files/Pods-school-schedule/Pods-school-schedule.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,15 +85,40 @@
 			isa = PBXGroup;
 			children = (
 				CEEFAB6E218276AF005E52CE /* AppDelegate.swift */,
-				CEEFAB70218276AF005E52CE /* HomeController.swift */,
-				CE099730218A76EB00DCE618 /* SignInController.swift */,
-				CEEFAB72218276AF005E52CE /* Main.storyboard */,
+				CEF90410218D108000A5BB20 /* Views */,
+				CEF9040F218D105C00A5BB20 /* Controllers */,
+				CEF90411218D10B000A5BB20 /* DataModel */,
 				CEEFAB78218276B0005E52CE /* Assets.xcassets */,
 				CEEFAB7A218276B0005E52CE /* LaunchScreen.storyboard */,
 				CEEFAB7D218276B0005E52CE /* Info.plist */,
 				CEEFAB75218276AF005E52CE /* school_schedule.xcdatamodeld */,
 			);
 			path = "school-schedule";
+			sourceTree = "<group>";
+		};
+		CEF9040F218D105C00A5BB20 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CEEFAB70218276AF005E52CE /* HomeController.swift */,
+				CE099730218A76EB00DCE618 /* SignInController.swift */,
+				CEF90412218D110600A5BB20 /* SwipeTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CEF90410218D108000A5BB20 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CEEFAB72218276AF005E52CE /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CEF90411218D10B000A5BB20 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,20 +200,24 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-school-schedule/Pods-school-schedule-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeCellKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -226,6 +257,7 @@
 				CE099731218A76EB00DCE618 /* SignInController.swift in Sources */,
 				CEEFAB6F218276AF005E52CE /* AppDelegate.swift in Sources */,
 				CEEFAB77218276AF005E52CE /* school_schedule.xcdatamodeld in Sources */,
+				CEF90413218D110600A5BB20 /* SwipeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
